@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tetris Game</h1>
+    <div class="game-container">
+        <div class="game-grid"></div>
+        <div class="game-info">
+            <button id="start-button">Start Game</button>
+            <div class="score-display">Score: <span id="score">0</span></div>
+            <div class="level-display">Level: <span id="level">1</span></div>
+            <div class="next-tetromino">
+                <h3>Next Piece:</h3>
+                <div class="mini-grid"></div>
+            </div>
+            <button id="pause-button">Pause</button>
+            <button id="audio-button">Toggle Music</button>
+        </div>
+    </div>
+    <div id="game-over">
+        <h2>Game Over!</h2>
+        <p>Your Score: <span id="final-score">0</span></p>
+        <button id="restart-button">Restart Game</button>
+    </div>
+    <audio id="background-music" loop>
+    <source src="audio/background.mp3" type="audio/mpeg">
+</audio>
+<audio id="rotate-sound">
+    <source src="audio/rotate.mp3" type="audio/mpeg">
+</audio>
+<audio id="line-clear-sound">
+    <source src="audio/line-clear.mp3" type="audio/mpeg">
+</audio>
+    <script src="script.js"></script>
+</body>
+</html>
